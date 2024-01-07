@@ -1,0 +1,13 @@
+<div id="parent">
+<div id="dive">
+<form class="form-inline" (ngSubmit)="onConvert()">
+  <div class="form-group mx-sm-3 mb-2">
+    <label for="numb" class="sr-only">Number to Words Converter</label>
+    <br>
+    <input type="number" [(ngModel)]="numb" class="form-control" name="numb" id="numb" placeholder="Enter a Number">
+  </div>
+  <button type="submit" class="btn btn-primary mb-2">Convert</button>
+</form>
+<p *ngIf="formattedNumber !== undefined">Formatted Number: {{ formattedNumber }}</p>
+</div>
+</div>
